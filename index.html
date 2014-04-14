@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="css/common.css" type="text/css" />
 		<style type="text/css">
 		
-		#tinybox{position:absolute; display:none; padding:10px; background:#ffffff url(../image/preload.gif) no-repeat 50% 50%; border:10px solid #e3e3e3; z-index:2000;}
+		#tinybox{position:absolute; display:none; padding:1px; background:#ffffff url(../image/preload.gif) no-repeat 50% 50%; border:1px solid #e3e3e3; z-index:2000;}
 		#tinymask{position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000000; z-index:1500;}
 		#tinycontent{background:#ffffff; font-size:1.1em;}
 		</style>
@@ -67,7 +67,7 @@ THE ACTUAL ORBIT SLIDER CONTENT
 			<div class="content" style="">
 				</br>
 				</br></br></br></br></br></br>
-				<h3><a href="#zhangxinxu" id="click_test3">点击▶播放</a></h3>
+				<h3><a href="#movie" id="click_test3">点击▶播放</a></h3>
 				
 			</div>
 			<a href=""><img src="demo/dummy-images/overflow.jpg" /></a>
@@ -82,7 +82,7 @@ THE ACTUAL ORBIT SLIDER CONTENT
 		</div>	
 		<script type="text/javascript">
 	        
-        var content3 = "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='650' height='500'><param name='movie' value='../flash/as3_clock_2.swf' /><param name='quality' value='high' /><param name='wmode' value='opaque' /><embed height='500' width='650'  src='http://player.youku.com/player.php/sid/XNjg2NzYyNjUy/v.swf' type='application/x-shockwave-flash'></embed></object>";
+        var content3 = "<param name='quality' value='high' /><param name='wmode' value='opaque' /><embed height='480' width='650'  src='http://player.youku.com/player.php/sid/XNjg2NzYyNjUy/v.swf' type='application/x-shockwave-flash'></embed>";
         T$('click_test3').onclick = function(){TINY.box.show(content3,0,0,0,1)}
 	    </script>
 	</body>
