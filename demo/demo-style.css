@@ -2,11 +2,11 @@
 will still work like a champ (except any content block needs a background which
 our demo gets from this sheet) */
 
-.container {
+/*.container {
     position: absolute; 
     top: 50%; 
     left: 50%;
-    margin: -400px 0 0 -470px; }
+    margin: -400px 0 0 -470px; }*/
     
 .content { background: url(dummy-images/coffee.jpg); }
 .content h1 {
@@ -23,7 +23,7 @@ our demo gets from this sheet) */
 	color: #222; }
 
 	#Top {
-	    background-image: url("/static/img/top_light.png");
+	    /*background-image: url("/static/img/top_light.png"); */
 	    text-align: center;
 	    background-color: #fff;
 	    height: 44px;
@@ -33,7 +33,7 @@ our demo gets from this sheet) */
 	    position: absolute; 
 	    top: 50%; 
 	    left: 50%;
-	    margin: -400px 0 0 -470px;
+	    margin: -300px 0 0 -470px;
 	}  
 	
 	#Bottom {
