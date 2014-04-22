@@ -41,9 +41,14 @@
 		
 		<!-- Run the plugin -->
 		<script type="text/javascript">
-			$(window).load(function() {
-				$('#featured').orbit(); 
+
+		$(window).load(function() {
+			$('#featured').orbit({
+				'bullets' : true,
+				'captionAnimation' : 'slideOpen'
 			});
+		});
+			
 		</script>
 		
 	</head>
@@ -63,9 +68,9 @@
 	            <div style="padding-top: 6px;">
 	            <table cellpadding="0" cellspacing="0" border="0" width="100%">
 	                <tbody><tr>
-	                    <td width="550" align="left"><a href="./index.html" name="top" title="d-f"><img src="demo/dummy-images/d.png" border="0" align="default" alt="V2EX" width="250" height="60"></a></td>
+	                    <td width="570" align="left"><a href="./index.html" name="top" title="d-f"><img src="demo/dummy-images/d.png" border="0" align="default" alt="V2EX" width="250" height="60"></a></td>
 	                    
-	                    <td width="520" align="left" style="padding-top: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://" class="top">关于我们</a></td>
+	                    <td width="520" align="left" style="padding-top: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#movie" id="click2aboutme">关于我们</a></td>
 	                </tr>
 	            </tbody></table>
 	            </div>
@@ -84,24 +89,28 @@ THE ACTUAL ORBIT SLIDER CONTENT
 ======================================= -->
 		<div id="featured"> 
 			<div class="content" style="">
-				</br>
-				</br></br></br></br></br></br>
-				<h3><a href="#movie" id="click1">点击▶播放</a></h3>
+				
+				<h3><a href="#movie" id="click1"><img src="demo/dummy-images/mov.png"  /></a></h3>
 				
 			</div>
+			
 			<a href=""><img src="demo/dummy-images/overflow.jpg" /></a>
 			<img src="demo/dummy-images/captions.jpg" data-caption="#htmlCaption" />
 			<img src="demo/dummy-images/features.jpg"  />
+			<div class="orbit-item" style="background-color: #eee; text-align: center; line-height: 290px;"><embed src="http://player.youku.com/player.php/Type/Folder/Fid/22169193/Ob/1/sid/XNzAyMDg4MjAw/v.swf" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" allowFullScreen="true" mode="transparent" type="application/x-shockwave-flash"></embed></div>
+		<div class="orbit-item"><embed   src='http://player.youku.com/player.php/sid/XNjU5Njk3MjEy/v.swf' allowFullScreen='true' quality='high' width='640' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed></div>
+		<div class="orbit-item"><iframe height=500 width=750 src="http://player.youku.com/embed/XNTMwMzc0MDI0" frameborder=0 allowfullscreen></iframe></div>
 		</div>
-		<!-- Captions for Orbit -->
-		<span class="orbit-caption" id="htmlCaption"><strong>加入</strong> 一个 <a class="ml20" href="#zhangxinxu" id="click2">效果预览</a>, 也是可以的</span>
 		
+		
+		<!-- Captions for Orbit -->
+		<span class="orbit-caption" id="htmlCaption"><a href="#movie2" id="click2">11111111</a></span>
 		
 		
 		</div>	
 		
 		
-		
+	<ul class="orbit-bullets"></ul>	
     <div id="Bottom">
         <div class="contentv">
             <!--<div class="inner">
@@ -123,6 +132,9 @@ THE ACTUAL ORBIT SLIDER CONTENT
 	        
         var content3 = "<param name='quality' value='high' /><param name='wmode' value='opaque' /><embed   src='http://player.youku.com/player.php/sid/XNjU5Njk3MjEy/v.swf' allowFullScreen='true' quality='high' width='640' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>";
         T$('click1').onclick = function(){TINY.box.show(content3,0,0,0,1)}
+		
+        var content3 = "<param name='quality' value='high' /><param name='wmode' value='opaque' /><embed   src='http://player.youku.com/player.php/sid/XNjU5Njk3MjEy/v.swf' allowFullScreen='true' quality='high' width='640' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>";
+        T$('click2').onclick = function(){TINY.box.show(content3,0,0,0,1)}
 	    </script>
 	</body>
 </html>
