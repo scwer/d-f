@@ -39,17 +39,7 @@
 			    </style>
 			<![endif]-->
 		
-		<!-- Run the plugin -->
-		<script type="text/javascript">
-
-		$(window).load(function() {
-			$('#featured').orbit({
-				'bullets' : true,
-				'captionAnimation' : 'slideOpen'
-			});
-		});
-			
-		</script>
+		
 		
 	</head>
 	<body>
@@ -88,27 +78,29 @@ THE ACTUAL ORBIT SLIDER CONTENT
 
 ======================================= -->
 		<div id="featured"> 
+			<div class="orbit-item" style="background-color: #fff;"><iframe height=450 width=740 src="http://player.youku.com/embed/XNTMwMzc0MDI0" frameborder=0 allowfullscreen></iframe>
+			</div>
+			<!--
 			<div class="content" style="">
 				
 				<h3><a href="#movie" id="click1"><img src="demo/dummy-images/mov.png"  /></a></h3>
 				
 			</div>
 			
-			<a href=""><img src="demo/dummy-images/overflow.jpg" /></a>
-			<img src="demo/dummy-images/captions.jpg" data-caption="#htmlCaption" />
-			<img src="demo/dummy-images/features.jpg"  />
+			-->
 			
+			<img src="demo/dummy-images/overflow.jpg" />
+			<!--<img src="demo/dummy-images/captions.jpg" data-caption="#htmlCaption" />
+			<img src="demo/dummy-images/features.jpg"  />-->
+						
 			
-			
-			<div class="orbit-item" style="background-color: #fff;"><iframe height=450 width=740 src="http://player.youku.com/embed/XNTMwMzc0MDI0" frameborder=0 allowfullscreen></iframe>
-			</div>
 			
 		</div>
 		
 		
-		<!-- Captions for Orbit -->
+		<!-- Captions for Orbit 
 		<span class="orbit-caption" id="htmlCaption"><a href="#movie2" id="click2">11111111</a></span>
-		
+		-->
 		
 		</div>	
 		
@@ -130,14 +122,21 @@ THE ACTUAL ORBIT SLIDER CONTENT
             </div>-->
         </div>
     </div>
+	<!-- Run the plugin -->
+	<script type="text/javascript">
+
+	$(window).load(function() {
+		$('#featured').orbit({
+			'bullets' : true,
+			
+		});
+	});
+		
+	</script>
     
 		<script type="text/javascript">
-	        
-        var content3 = "<param name='quality' value='high' /><param name='wmode' value='opaque' /><embed   src='http://player.youku.com/player.php/sid/XNjU5Njk3MjEy/v.swf' allowFullScreen='true' quality='high' width='640' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>";
+		var content3 = "<param name='quality' value='high' /><param name='wmode' value='opaque' /><embed   src='http://player.youku.com/player.php/sid/XNjU5Njk3MjEy/v.swf' allowFullScreen='true' quality='high' width='640' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>";
         T$('click1').onclick = function(){TINY.box.show(content3,0,0,0,1)}
-		
-        var content3 = "<param name='quality' value='high' /><param name='wmode' value='opaque' /><embed   src='http://player.youku.com/player.php/sid/XNjU5Njk3MjEy/v.swf' allowFullScreen='true' quality='high' width='640' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>";
-        T$('click2').onclick = function(){TINY.box.show(content3,0,0,0,1)}
 	    </script>
 	</body>
 </html>
