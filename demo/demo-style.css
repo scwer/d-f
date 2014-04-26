@@ -36,24 +36,33 @@ our demo gets from this sheet) */
 	    position: absolute; 
 	    top: 50%; 
 	    left: 50%;
-	    margin: -300px 0 0 -470px;
+	    margin: -380px 0 0 -470px;
 	}  
 	
 	#Bottom {
-	    border-top: 50px solid #000;
+	    border-top: 20px solid #000;
 	    background-color: #000;
 	    text-align: center;
 	    color: #999;
 	    position: absolute; 
 	    top: 50%; 
 	    left: 50%;
-	    margin: 350px 0 0 -470px;
+	    margin: 280px 0 0 -470px;
 	}
 	
 	.contentv {
 		background-color: #000;
 	    width: 900px;
 	    margin: 0px auto 0px auto;
+	}
+	
+	.qr {
+		float: right;
+		text-align: right;
+	}
+	
+	.aboutme {
+		text-align: left;
 	}
 /*	--------------------------------------------------
 	Global Reset & Standards
