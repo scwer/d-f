@@ -40,9 +40,14 @@ our demo gets from this sheet) */
 	    top: 60%; 
 	    left: 50%;
 	    margin: -380px 0 0 -470px;
+		
 	}  
 	
+#d {
 	
+	float:right;
+	margin-right:0px
+}	
 	
 .contentv {
 		background-color: #000;

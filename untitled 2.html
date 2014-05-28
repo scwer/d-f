@@ -1,0 +1,25 @@
+.demo {
+/*非IE的主流浏览器识别的垂直居中的方法*/
+display: table-cell;
+vertical-align:middle;
+/*防止非utf-8引起的hack失效问题，如gbk编码*/
+*font-family:Arial;
+width:600px;
+height:180px;
+line-height:180px;
+text-align:center;
+overflow:hidden;
+background:red;
+}
+
+.demo a {*font-size:160px} /* 针对IE6的Hack，自行调节，约为高度的0.873 */
+
+.demo img {border:1px #666 solid;vertical-align:middle}
+
+<div class="demo">
+
+<a href="#"><img alt="百度" src="http://www.baidu.com/img/baidu_logo.gif" /></a>
+
+<a href="#"><img alt="百度" src="http://www.baidu.com/img/baidu_logo.gif" /></a>
+
+</div>
