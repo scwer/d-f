@@ -39,13 +39,12 @@ our demo gets from this sheet) */
 	    position: absolute; 
 	    top: 60%; 
 	    left: 50%;
-	    margin: -380px 0 0 -470px;
+	    margin: -450px 0 0 -470px;
 		
 	}  
 	
 #d {
-	
-	float:right;
+	text-align: right;
 	margin-right:0px
 }	
 	
