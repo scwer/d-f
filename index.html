@@ -1,127 +1,42 @@
-<!DOCTYPE html>
-
-
-
-<!-- 
- * Markup for jQuery Orbit Plugin 1.2.3
- * www.ZURB.com/playground
- * Copyright 2010, ZURB
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- -->
- 
- 
- 
-	<head>
-		<meta charset="utf-8" />
-		<title>D-fishflims STUDIO</title>
-		
-		
-		<!-- Attach our CSS -->
-	  	<link rel="stylesheet" href="orbit-1.2.3.css">
-	  	<link rel="stylesheet" href="demo/demo-style.css">
-		<link rel="stylesheet" href="css/common.css" type="text/css" />
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>df</title>
+<link rel="stylesheet" href="css/orbit.css">
+<link rel="stylesheet" href="css/common.css" type="text/css" />
 		<style type="text/css">
 		
 		#tinybox{position:absolute; display:none; padding:1px; background:#ffffff url(../image/preload.gif) no-repeat 50% 50%; border:1px solid #e3e3e3; z-index:2000;}
 		#tinymask{position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000000; z-index:1500;}
 		#tinycontent{background:#ffffff; font-size:1.1em;}
 		</style>
-		<!-- Attach necessary JS -->
-		<script type="text/javascript" src="jquery-1.5.1.min.js"></script>
-		<script type="text/javascript" src="jquery.orbit-1.2.3.min.js"></script>	
-		<script type="text/javascript" src="js/tinybox.js"></script>
-		<script type="text/javascript" src="detectmobilebrowser.js"></script>
 		
-			<!--[if IE]>
-			     <style type="text/css">
-			         .timer { display: none !important; }
-			         div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
-			    </style>
-			<![endif]-->
-		
-		
-		
-	</head>
-	<body>
-	
+</head>
+<body>
+
+<div style="width: 1200px; height: 750px; margin: 0 auto;">
+	<div id="featured">
+		<a class="orbit-item" href="#movie" id="click2" ><img src="images/6.jpg" alt="img1"></a>
+		<a class="orbit-item" href="#movie" id="click3" ><img src="images/7.jpg" alt="img1"></a>
+		<a class="orbit-item" href="#movie" id="click4" ><img src="images/8.jpg" alt="img1"></a>
+		<a class="orbit-item" href="#movie" id="click5" ><img src="images/9.jpg" alt="img1"></a>
 	</div>
-		
-	    <div id="Top">
-	        <div class="contentv">
-	            <div style="padding-top: 6px;">
-	            <table cellpadding="0" cellspacing="0" border="0" width="100%">
-	                <tbody><tr>
-	                    <a href="./index.html" name="top" title="d-f"><img src="demo/dummy-images/logo.png" border="0" align="default" alt="d-f"  height="140"></a>
-						
-	                </tr>
-					<!--<div id="d"><a href="./a.html"><img src="demo/dummy-images/D-fishflimsabout.png"  /></a>-->
-	            </tbody></table>
-	            </div>
-	        </div>
-			
-		
-		<!-- <a href="http://www.zurb.com/playground/orbit-jquery-image-slider">View Docs + Playground for Orbit</a> -->
 	
-	<div id="d"><a href="./a.html"><img src="demo/dummy-images/D-fishflimsabout.png"  /></a>
-	<div style="padding-top: 70px;">   </div>
-	
-<!-- =======================================
+</div>
 
-THE ACTUAL ORBIT SLIDER CONTENT 
-
-======================================= -->
-		<div id="featured"> 
-
-			
-			<a href="#movie" id="click1"><img src="demo/dummy-images/one.jpg" /></a>
-			
-			<div class="orbit-item" style="background-image:url(demo/dummy-images/wedding/Boracay.jpg)"><h3><a href="#movie" id="click2"><img src="demo/dummy-images/mov.png"  /></a></h3>
-			</div>
-			<div class="orbit-item" style="background-image:url(demo/dummy-images/wedding/gedeyugao.jpg)"><h3><a href="#movie" id="click3"><img src="demo/dummy-images/mov.png"  /></a></h3>
-			</div>
-			<div class="orbit-item" style="background-image:url(demo/dummy-images/wedding/Maldives.jpg)"><h3><a href="#movie" id="click4"><img src="demo/dummy-images/mov.png"  /></a></h3>
-			</div>
-			<div class="orbit-item" style="background-image:url(demo/dummy-images/wedding/han.jpg)"><h3><a href="#movie" id="click5"><img src="demo/dummy-images/mov.png"  /></a></h3>
-			</div>
-			
-		</div>
-		
-		
-		
-		</div>	
-		
-
-    <div id="Bottom">
-        <div class="contentv">
-         <!--   <div class="inner">
-               
-                   <div class="qr">
-                   <img src="demo/dummy-images/erwzma.png" border="0" align="default" alt="d-f"  height="140">
-				   </div>
-				   
-				   <div class="aboutme">
-					   联络我们：<br>
-				   </div>
-                    <div class="sep20"><br></div>
-                    <span class="small fade"></span>
-					<div style="padding-top: 150px;">   </div>
-                <div class="sep10"> </div>
-			</div> -->
-        </div>
-    </div>
-	<!-- Run the plugin -->
-	<script type="text/javascript">
-
-	$(window).load(function() {
-		$('#featured').orbit({
-			
-			
-		});
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.orbit.min.js"></script>
+<script type="text/javascript" src="js/tinybox.js"></script>
+<script>
+$(window).load(function() {
+	$('#featured').orbit({
+		bullets : true,
+		startClockOnMouseOut : true,
+		captionAnimation : 'slideOpen'
 	});
-		
-	</script>
-    
+});
+</script>
 		<script type="text/javascript">
 		var content2 = "<param name='quality' value='high' /><param name='wmode' value='opaque' /><embed   src='http://player.youku.com/player.php/sid/XNjU5Njk3MjEy/v.swf' allowFullScreen='true' quality='high' width='640' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>";
         T$('click2').onclick = function(){TINY.box.show(content2,0,0,0,1)}
@@ -138,5 +53,9 @@ THE ACTUAL ORBIT SLIDER CONTENT
 		var content1 = "<param name='quality' value='high' /><param name='wmode' value='opaque' /><embed   src='http://player.youku.com/player.php/sid/XNTgxODQxNDcy/v.swf' allowFullScreen='true' quality='high' width='640' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>";
         T$('click1').onclick = function(){TINY.box.show(content1,0,0,0,1)}
 	    </script>
-	</body>
+<div style="text-align:center;clear:both">
+<p>测试版</p>
+
+</div>
+</body>
 </html>
