@@ -1,0 +1,667 @@
+/******************************************************************
+Theme Name: MAYAD Theme
+Theme URI: http://neuewebstudio.com/
+Description: Mayad Studios Responsive Theme by <a href="http://neuee.me/">Neuee Perez</a>.
+Author: Neuee Perez
+Author URI: http://neuee.me/
+Version: 1.0
+Tags: html5, css3, development, responsive, media queries, mobile, h5bp
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+******************************************************************/
+
+/* custom fonts */
+
+/*
+@font-face {
+    font-family: 'OstrichSansBlack';
+    src: url('fonts/ostrich-black-webfont.eot');
+    src: url('fonts/ostrich-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ostrich-black-webfont.woff') format('woff'),
+         url('fonts/ostrich-black-webfont.ttf') format('truetype'),
+         url('fonts/ostrich-black-webfont.svg#OstrichSansBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rokkitt Bold'), local('Rokkitt-Bold'), url(http://themes.googleusercontent.com/static/fonts/rokkitt/v5/Mef17w3J4CtS0lw4Wa_8rxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+*/
+
+/*
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
+
+@font-face {
+    font-family: 'Open Baskerville';
+    src: url('fonts/openbaskerville-0.0.75-webfont.eot');
+    src: url('fonts/openbaskerville-0.0.75-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/openbaskerville-0.0.75-webfont.woff') format('woff'),
+         url('fonts/openbaskerville-0.0.75-webfont.ttf') format('truetype'),
+         url('fonts/openbaskerville-0.0.75-webfont.svg#open_baskerville_0.0.75normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+
+/* css main */
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	-moz-hyphens: none !important;
+	hyphens: none !important;
+}
+
+ol {
+	list-style: decimal !important;
+	padding-left: 24px !important;
+}
+
+body {
+	background: #e7e9ea url('bg.jpg') scroll repeat;
+}
+
+body div {
+	/* font-family: 'Open Baskerville', serif; */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.wrap {
+	
+}
+
+#main {
+	width: 90%;
+	padding: 0 5%;
+	background: #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	/*box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 8px solid rgba(0,0,0,0.1);*/
+	-webkit-box-shadow: 0px 0px 22px 0px rgba(115, 99, 87, 0.3);
+	box-shadow: 0px 0px 22px 0px rgba(115, 99, 87, 0.3);
+}
+
+#posts {
+	clear: both;
+}
+
+.clear,.clearfix {
+	clear: both;
+}
+
+/* header */
+
+#logo {
+	width: 22%;
+	float: left;
+	text-align: center;
+	margin: 65px 0 0 0;
+}
+
+#logo2 {
+	display: none;
+	float: none;
+	text-align: center;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+/*#introtext h1, #introtext h2 {
+	color: #2d3436;
+}
+
+#introtext h1 {
+	margin-bottom: 0;
+}
+
+#introtext h2 {
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0 auto 20px;
+}
+
+#introtext .divider {
+	background: url('images/topdivider.png') scroll no-repeat center top;
+	width: 100%;
+	height: 27px;
+}*/
+
+#content {
+	margin-top: 0 !important;
+}
+
+.post-content a {
+	color: #633 !important;
+}
+.post-content a:hover {
+	color: #633;
+}
+
+#hometitle {
+	font-size: 24px;
+	color: #736357;
+	text-align: center;
+	margin: 36px auto 20px;
+}
+
+h2.introtext {
+	font-size: 12px;
+	/* font-family: "Open Baskerville", serif !important; */
+	font-family: Arial, Helvetica, sans-serif !important;
+	color: #736357;
+	text-align: center;
+	margin: -18px 0 0;
+	padding-bottom: 10px;
+}
+
+.mayadbullet {
+	background: url('images/sprites.png') scroll no-repeat -54px 0;
+	width: 24px;
+	height: 21px;
+	margin: 0 auto;
+	text-align: center;
+	clear: both;
+}
+
+.ribbon {
+	background: url('images/sprites.png') scroll no-repeat 0 -19px;
+	width: 58px;
+	height: 45px;
+	position: absolute;
+	margin-left: -58px;
+	margin-top: -34px;
+}
+
+footer .attribution {
+	text-align: center;
+	font-family: "Josefin Sans", sans-serif;
+	color: #534741;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* top menu */
+
+header nav > div {
+	width: 20%;
+	float: left;
+	margin: 65px 0% 0 19%;
+}
+
+header nav .menu-right-menu-container {
+	margin: 0 17% 0 90%;
+}
+
+header nav > div ul li {
+	width: 50%;
+	text-align: center;
+	float: left;
+	text-transform: uppercase;
+}
+
+header nav li a, header nav li a:visited {
+	font-family: "Josefin Sans", sans-serif;
+	color: #534741;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+header nav li a:hover {
+	color: #1CBBB4 !important;
+	text-decoration: none;
+}
+
+nav #menu-left-menu-container {
+	float: left;
+}
+
+nav #menu-right-menu-container {
+	float: right;
+}
+
+/*
+nav #menu-main li:first-child {
+	display: none;
+}
+
+nav #menu-main {
+	margin: 50px auto 0;
+	text-align: center;
+}
+
+nav #menu-main li {
+	width: 15%;
+	display: block;
+	float: left;
+}
+
+nav #menu-main li a {
+	width: 97%;
+	margin: 0 auto;
+	display: inline-block;
+	font-family: OstrichSansBlack, sans-serif;
+	font-size: 24px;
+	background: #f0f0f0;
+	color: #f69679;
+	line-height: 40px;
+	height: 40px;
+	padding: 0;
+	text-decoration: none;
+}
+
+nav #menu-main .current_page_item a, nav #menu-main .current-menu-item a {
+	color: #FFF;
+	background: #F69679;
+}
+
+nav #menu-main li a:hover {
+	color: #FFF;
+	background: #F01D4F;
+	background: rgba(240,29,79,0.6);
+}
+*/
+
+/* pagination */
+
+nav .bones_page_navi {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Josefin Sans", sans-serif;
+	text-transform: uppercase;
+}
+
+nav .bones_page_navi li a {
+	color: #f26c4f;
+}
+
+.bones_page_navi li {
+	margin-left: 14px !important;
+}
+
+.bones_page_navi li.bpn-current {
+	border-bottom: 0 none !important;
+}
+
+nav .bones_page_navi li {
+	display: inline-block;
+	float: none !important;
+}
+
+/* socials */
+
+.topsearch #s {
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	padding: 2px;
+	width: 120px;
+	position: relative;
+	top: -2px;
+}
+
+#slidersearch {
+	max-width: 800px;
+	width: 96%;
+	margin: 20px auto 0;
+}
+
+#socialsearch {
+	width: 400px;
+	float: right;
+}
+
+#socials ul {
+	float: right;
+}
+
+#socialsearch #socials {
+	width: 124px;
+	height: 32px;
+}
+
+#socialsearch #socials ul li {
+	float: left;
+	margin-right: 9px;
+}
+
+#slidersearch #socials ul li a {
+	display: block;
+	height: 19px;
+	width: 18px;
+	background-image: url('images/sprites.png');
+	background-repeat: no-repeat;
+	color: transparent;
+}
+
+#socials li {
+	float: left;
+	margin-left: 6px;
+}
+
+#socials .fb a {
+	background-position: 0 0;
+}
+
+#socials .tt a {
+	background-position: -18px 0;
+}
+
+#socials .vm a {
+	background-position: -36px 0;
+}
+
+/* page content */
+
+#faqslist li {
+	margin: 10px 0 15px;
+}
+
+#faqslist li strong {
+	cursor: pointer;
+}
+
+/* slider */
+
+/*! http://responsiveslides.com v1.32 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.rslides_tabs {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 12px;
+  top: -80px;
+}
+
+.rslides_tabs li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.rslides h1 {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  background: rgba(0,0,0,0.25);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 999999;
+  display: none;
+}
+
+.rslides .rslides1_on:hover h1 {
+	display: block;
+}
+
+.rslides h1 a {
+  color: #fff;
+  font-size: 16px;
+  /* font-family: "Open Baskerville", serif; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rslides h1 a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.rslides_tabs li a {
+  display: block;
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  background: #d7d7d7;
+  text-decoration: none;
+  color: transparent;
+}
+
+.rslides_tabs li.rslides_here a {
+  background: #e8b9b3;
+}
+
+/* content */
+
+#inner-content {
+
+}
+
+#posts .post {
+	margin-bottom: 10px;
+}
+
+.sharebuttons {
+	text-align: right;
+}
+
+.sharebuttons li {
+	display: inline-block;
+	margin-left: 10px;
+	height: 22px;
+	overflow: hidden;
+	max-width: 100px;
+}
+
+/* headings */
+
+#introtext {
+	text-align: center;
+}
+
+h1, .h1, h2, .h2 {
+	font-family: 'Josefin Sans', sans-serif !important;
+	color: #1cbbb4;
+	line-height: 1em;
+}
+
+.single h1, .single .h1, .page h1, .page .h1, .archive .archive-title, .search .search-title {
+	color: #736357;
+    font-size: 24px !important;
+	margin: 36px 0 6px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2, .h2 {
+	margin-bottom: 0 !important;
+	line-height: 1.2em !important;
+}
+
+p.datetime {
+	margin: 0;
+	font-size: 12px;
+	font-family: "Josefin Sans", sans-serif;
+	color: #736357;
+	text-transform: uppercase;
+}
+
+h1.h2 a {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #f26c4f;
+}
+
+h1.single-title, h1.page-title {
+	color: #f26c4f;
+	font-size: 18px !important;
+	font-weight: bold;
+	line-height: 1.2em !important;
+	text-align: left !important;
+	margin-bottom: 2px;
+}
+
+.doublelines {
+	border-top: 1px solid #a39791;
+	border-bottom: 1px solid #a39791;
+	width: 100%;
+	height: 4px;
+	margin-bottom: 3px;
+}
+
+/* misc */
+
+p.meta {
+	color: #f69679;
+	text-transform: uppercase;
+}
+
+.post-content .wp-smiley {
+	margin-bottom: 0 !important;
+}
+
+
+/*********************************************************************
+----------------------------RESPONSIVE CSS----------------------------
+*********************************************************************/
+
+
+#main iframe {
+	width: 100%;
+	height: 400px;
+}
+
+body img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* 0.5623 height/width */
+
+@media screen and (max-width: 960px) {
+#logo {
+	display: none;
+}
+#logo2 {
+	display: block;
+}
+header nav > div {
+	width: 50%;
+	float: left;
+	margin: 10px 0 20px !important;
+}
+}
+
+@media screen and (max-width: 769px) {
+#main iframe {
+	width: 100%;
+	height: 375px;
+	margin: 0;
+}
+nav #menu-main li {
+	width: 50%;
+	display: block;
+	float: left;
+	margin-bottom: 6px;
+}
+}
+
+@media screen and (max-width: 650px) {
+#main iframe {
+	height: 325px;
+	margin: 0;
+}
+nav #menu-main li {
+	width: 50%;
+	display: block;
+	float: left;
+}
+}
+
+@media screen and (max-width: 480px) {
+header nav > div {
+	width: 100%;
+	float: none;
+	margin: 0 !important;
+}
+header nav > div li {
+	width: 100% !important;
+}
+
+header nav > div li a {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+
+#main iframe {
+	height: 250px;
+	margin: 0;
+}
+nav #menu-main li {
+	width: 100%;
+	display: block;
+}
+nav #menu-main li a {
+	width: 100%;
+	display: block;
+}
+}
+
+@media screen and (max-width: 320px) {
+#main iframe {
+	height: 160px;
+	margin: 0;
+}
+}
+
+.postid-2320 .post-content img {
+   margin-bottom: 6px;
+}
