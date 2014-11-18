@@ -149,7 +149,7 @@ body div {
 }*/
 
 #content {
-	margin-top:  !important;
+	margin-top: 0 !important;
 }
 
 .post-content a {
